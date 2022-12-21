@@ -81,7 +81,8 @@
         background-color: rgba(255, 255, 255, 0.1);
         border-radius: 2vmin;
         left: 45%;
-        top: 45%
+        top: 45%;
+        transition: transform 1s cubic-bezier(.05, .43, .25, .95);
     }
 
     .big_card:nth-child(2) {
@@ -120,20 +121,34 @@
         transform: translate(80%, 10%) rotate(30deg);
     }
 
+
+    .little_card:nth-child(1) {
+        background-image: url("https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    }
+
+    .little_card:nth-child(3) {
+        background-image: url("https://images.pexels.com/photos/2071882/pexels-photo-2071882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    }
+
+    .little_card:nth-child(5) {
+        background-image: url("https://images.pexels.com/photos/2071881/pexels-photo-2071881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    }
+
+    .little_card:nth-child(7) {
+        background-image: url("https://images.pexels.com/photos/3777622/pexels-photo-3777622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    }
+
+
     .card_group:hover > .little_card:nth-child(1) {
         transform: translate(300%, 160%) rotate(10deg);
-        background-image: url("https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
     }
     .card_group:hover > .little_card:nth-child(3) {
         transform: translate(300%, -160%) rotate(-25deg);
-        background-image: url("https://images.pexels.com/photos/2071882/pexels-photo-2071882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
     }
     .card_group:hover > .little_card:nth-child(5) {
         transform: translate(-300%, 150%) rotate(-20deg);
-        background-image: url("https://images.pexels.com/photos/2071881/pexels-photo-2071881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
     }
     .card_group:hover > .little_card:nth-child(7) {
         transform: translate(-300%, -160%) rotate(20deg);
-        background-image: url("https://images.pexels.com/photos/3777622/pexels-photo-3777622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
     }
 </style>
